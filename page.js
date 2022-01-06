@@ -81,19 +81,19 @@ $('document').ready(function() {
     }
 
 
-//     // Add research
-//     for (var i = 0; i < data.research.length; i++) {
-//         var proj = data.research[i];
-//         var html = getProjectHTML(proj);
-//         $('table#research-table').append(html);
-//     }
+    // Add extracurricular
+    for (var i = 0; i < data.extracurricular.length; i++) {
+        var proj = data.extracurricular[i];
+        var html = getExtracurricularHTML(proj);
+        $('table#extracurricular-table').append(html);
+    }
 
-//     // Add blog
-//     for (var i = 0; i < data.blog.length; i++) {
-//         var proj = data.blog[i];
-//         var html = getProjectHTML(proj);
-//         $('table#blog-table').append(html);
-//     }
+    //Add projects
+    for (var i = 0; i < data.blog.length; i++) {
+        var proj = data.blog[i];
+        var html = getProjectHTML(proj);
+        $('table#blog-table').append(html);
+    }
 });
 
 function getWorkHTML(proj) {
@@ -103,7 +103,25 @@ function getWorkHTML(proj) {
 
 
 	var html = '<tr>';
-    html += '<td class="description-td"><em>' + proj.company_name + '</em> |' + proj.job_title;
+    html += '<td class="description-td"><b>' + proj.company_name + '</b> |' + proj.job_title;
+	html += '<br> <ul>';
+	for (var i = 0; i < proj.acheivements.length; i++) {
+		var acheivement = proj.acheivements[i];
+		html += '<li>';
+		html += acheivement;
+		html += '</li>';
+	}
+    html += '</ul>';
+    html += '</td>';
+    html += '</tr>';
+    console.log(html);
+    return html;
+}
+
+function getExtracurricularHTML(proj) {
+
+	var html = '<tr>';
+    html += '<td class="description-td"><b>' + proj.org_name + '</b> |' + proj.duty;
 	html += '<br> <ul>';
 	for (var i = 0; i < proj.acheivements.length; i++) {
 		var acheivement = proj.acheivements[i];
@@ -119,14 +137,19 @@ function getWorkHTML(proj) {
 }
 
 function getProjectHTML(proj) {
-    var html = '<tr>';
-    // Add image
-    // Add title and description
-    html += '<td class="description-td"><p><em>' + proj.title + '</em>. '
-    if ('authors' in proj) {
-        html += '<small>' + proj.authors + '</small>';
-    }
-    html += '<br>' + proj.text + '</p></td>';
+	var html = '<tr>';
+    html += '<td class="description-td"><b>' + proj.name + '</b>';
+	html += '<br>' + '<em>' + proj.intro + '</em>';
+	html += '<br> <ul>';
+	for (var i = 0; i < proj.acheivements.length; i++) {
+		var acheivement = proj.acheivements[i];
+		html += '<li>';
+		html += acheivement;
+		html += '</li>';
+	}
+    html += '</ul>';
+    html += '</td>';
     html += '</tr>';
+    console.log(html);
     return html;
 }
