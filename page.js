@@ -109,6 +109,7 @@ function getWorkHTML(proj) {
     html += '</ul>';
     html += '</td>';
     html += '</tr>';
+    console.log(html);
     return html;
 }
 
