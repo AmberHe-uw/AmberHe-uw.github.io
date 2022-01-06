@@ -127,7 +127,6 @@ function getWorkHTML(proj) {
     html += '</ul>';
     html += '</td>';
     html += '</tr>';
-    console.log(html);
     return html;
 }
 
@@ -145,7 +144,6 @@ function getExtracurricularHTML(proj) {
     html += '</ul>';
     html += '</td>';
     html += '</tr>';
-    console.log(html);
     return html;
 }
 
@@ -163,6 +161,5 @@ function getProjectHTML(proj) {
     html += '</ul>';
     html += '</td>';
     html += '</tr>';
-    console.log(html);
     return html;
 }
