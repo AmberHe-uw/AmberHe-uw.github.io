@@ -26,14 +26,14 @@ var data = {
 			duty:"Co-founder",
 			acheivements: [
 				"Teamed up with students from Peking University, Tsinghua University, Fudan University and Shanghai Jiaotong University to create a thinking exchange platform for college students from prestigious universities at home and abroad The main projects included the online community culture operation of the <em>Youth Thought Exchange Circle</em>, the Chinese Youth Campus Forum, and the Fortune Top 500 Lecture",
-				"Exported youth communities to establish and brand culture, operated, and promoted online education products, new media operations and cooperation, coordinated and guided the progress of team work, and enhanced team cohesion.",
+				"Exported youth communities to establish and brand culture, operated, and promoted online education products, new media operations and cooperation, coordinated and guided the progress of team work, and enhanced team cohesion",
 			]
 		},
 		{
 			org_name: "Overseas Youth Communities",
 			duty: "Leader",
 			acheivements: [
-				"Built a platform for international students to exchange information about studying abroad, share daily life, and answer questions."
+				"Built a platform for international students to exchange information about studying abroad, share daily life, and answer questions"
 			]
 		},
 		{
@@ -59,7 +59,7 @@ var data = {
        },
        {
            name: 'Interactive Data Application',
-           intro: 'An Interactive Data Application That Analyzed the COVID-19 Cases, Specifically Tracked the Cases of COVID-19 in the U.S., Conclude Harms Caused by Coronavirus (e.g., economics), and Analyzed the Vaccination.',
+           intro: 'An Interactive Data Application That Analyzed the COVID-19 Cases, Specifically Tracked the Cases of COVID-19 in the U.S., Conclude Harms Caused by Coronavirus (e.g., economics), and Analyzed the Vaccination',
            acheivements: [
 		   	 "Produced interactive application through Shiny",
 			 "Utilized layouts to create usable and organized interactive systems",
@@ -68,6 +68,24 @@ var data = {
 			 "Used git to collaborate with a team of programmers"
 		   ]
        },
+	{
+           name: 'Climate Change Applications',
+           intro: 'An Application that Explore Trends in CO2 Emissions Using Data Compiled by Our World in Data',
+           acheivements: [
+	   	"Produced interactive applications using Shiny",
+		"Utilized layouts to create usable and organized interactive systems",
+		"Defined multiple interactive views for a single model of data"
+	   ]
+	},
+	 {
+           name: 'Incarceration Data Visualization',
+           intro: 'A Data Visualization that Expose Patterns of Inequality Using Incarceration Data Collected by the Vera Institute',
+           acheivements: [
+		"Wrangled and shaped real-world data",
+		"Generated visualizations of map-based data",
+		 "Explored and drew conclusions from visual data"
+           ]
+	}
       ]
 }
 
