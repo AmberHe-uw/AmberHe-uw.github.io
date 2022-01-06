@@ -97,6 +97,11 @@ $('document').ready(function() {
 });
 
 function getWorkHTML(proj) {
+	console.log(proj + ' ');
+	console.log(proj.company_name);
+		console.log(proj.job_title);
+
+
 	var html = '<tr>';
     html += '<td class="description-td"><em>' + proj.company_name + '</em> |' + proj.job_title;
 	html += '<br> <ul>';
