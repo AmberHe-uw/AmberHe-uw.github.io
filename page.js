@@ -45,7 +45,7 @@ var data = {
 				"Reported by many official media including Guangdong Satellite TV, Chongqing Satellite TV, People's Daily and China News Network"			
 			]
 		}
-	]
+	],
     "projets": [
        {
            name: "Chinese Quora",
