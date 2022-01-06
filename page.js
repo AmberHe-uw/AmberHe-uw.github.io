@@ -89,10 +89,10 @@ $('document').ready(function() {
     }
 
     //Add projects
-    for (var i = 0; i < data.blog.length; i++) {
-        var proj = data.blog[i];
+    for (var i = 0; i < data.projets.length; i++) {
+        var proj = data.projets[i];
         var html = getProjectHTML(proj);
-        $('table#blog-table').append(html);
+        $('table#projects-table').append(html);
     }
 });
 
