@@ -49,7 +49,7 @@ var data = {
     'projets': [
        {
            name: "Chinese Quora",
-		   intro: "A Fully Functional Q&A Website Backend by Python Django",
+		   intro: "A Fully functional <a href='http://146.148.69.22/'>Q&A website</a> Backend by Python Django",
            acheivements: [
 		   	 "Implemented modules of writing articles, messages, notifications, searching, indexing, and caching",
 			 "Designed the restful API for the users, and the article data models was back-end by MySQL",
