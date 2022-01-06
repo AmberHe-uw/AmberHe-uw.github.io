@@ -1,5 +1,5 @@
 var data = {
-    "work": [
+    'work': [
 	    {
 			company_name: "China Electronics Technology Group Corporation",
 			job_title: "Intern of the development deparment",
@@ -20,7 +20,7 @@ var data = {
 			]
 	    }
     ],
-	"extracurricular": [
+	'extracurricular': [
 		{
 			org_name: "Peer to Peer",
 			duty:"Co-founder",
@@ -46,7 +46,7 @@ var data = {
 			]
 		}
 	],
-    "projets": [
+    'projets': [
        {
            name: "Chinese Quora",
 		   intro: "A Fully Functional Q&A Website Backend by Python Django",
