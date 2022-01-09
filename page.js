@@ -24,9 +24,10 @@ var data = {
 		{
 			org_name: "Peer to Peer",
 			duty:"Co-founder",
+			intro: "Teamed up with students from Peking University, Tsinghua University, Fudan University and Shanghai Jiaotong University to create a thinking exchange platform for college students from prestigious universities at home and abroad. There are 82 college students in the operation team and 301 members. My team's wechat official account has about 13,000 followers"
 			acheivements: [
-				"Teamed up with students from Peking University, Tsinghua University, Fudan University and Shanghai Jiaotong University to create a thinking exchange platform for college students from prestigious universities at home and abroad The main projects included the online community culture operation of the <em>Youth Thought Exchange Circle</em>, the Chinese Youth Campus Forum, and the Fortune Top 500 Lecture",
-				"Exported youth communities to establish and brand culture, operated, and promoted online education products, new media operations and cooperation, coordinated and guided the progress of team work, and enhanced team cohesion",
+				"The main projects included the online community culture operation of the 'Youth Thought Exchange Circle',the Chinese Youth Campus Forum, and the Fortune Top 500 Lecture",
+				"Exported youth communities to establish and brand culture, operated, and promoted online education products, new media operations and cooperation, coordinated and guided the progress of team work, and enhanced team cohesion"
 			]
 		},
 		{
@@ -42,7 +43,7 @@ var data = {
 			acheivements: [
 				"United and coordinated hundreds of Chinese college students to provide free online Q&A services for tens of thousands of middle school students who were unable to attend classes due to COVID-19",
 				"Responsible for market analysis and coordination, Internet marketing planning, mentor and student community management, parent, and student feedback collection",
-				"Reported by many official media including Guangdong Satellite TV, Chongqing Satellite TV, People's Daily and China News Network"			
+				"Reported by many official media including Guangdong Satellite TV, Chongqing Satellite TV, People's Daily and China News Network, and our article got 19,000 views"			
 			]
 		}
 	],
@@ -61,7 +62,7 @@ var data = {
            name: 'Interactive Data Application',
            intro: 'An Interactive Data Application That Analyzed the COVID-19 Cases, Specifically Tracked the Cases of COVID-19 in the U.S., Conclude Harms Caused by Coronavirus (e.g., economics), and Analyzed the Vaccination',
            acheivements: [
-		   	 "Produced interactive application through Shiny",
+		   	 "Produced interactive application through <em>Shiny</em>",
 			 "Utilized layouts to create usable and organized interactive systems",
 			 "Defined multiple interactive views for a single model of data",
 			 "Worked with a team of programmers to analyze data",
@@ -134,6 +135,9 @@ function getExtracurricularHTML(proj) {
 
 	var html = '<tr>';
     html += '<td class="description-td"><b>' + proj.org_name + '</b> |' + proj.duty;
+	if (proj.intro) {
+	   html += '<br>' + '<em>' + proj.intro + '</em>';
+	}
 	html += '<br> <ul>';
 	for (var i = 0; i < proj.acheivements.length; i++) {
 		var acheivement = proj.acheivements[i];
