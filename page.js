@@ -24,7 +24,7 @@ var data = {
 		{
 			org_name: "Peer to Peer",
 			duty:"Co-founder",
-			intro: "Teamed up with students from Peking University, Tsinghua University, Fudan University and Shanghai Jiaotong University to create a thinking exchange platform for college students from prestigious universities at home and abroad. There are 82 college students in the operation team and 301 members. My team\'s wechat official account has about 13,000 followers"
+			intro: "Teamed up with students from Peking University, Tsinghua University, Fudan University and Shanghai Jiaotong University to create a thinking exchange platform for college students from prestigious universities at home and abroad. There are 82 college students in the operation team and 301 members. My team's wechat official account has about 13,000 followers",
 			acheivements: [
 				"The main projects included the online community culture operation of the 'Youth Thought Exchange Circle',the Chinese Youth Campus Forum, and the Fortune Top 500 Lecture",
 				"Exported youth communities to establish and brand culture, operated, and promoted online education products, new media operations and cooperation, coordinated and guided the progress of team work, and enhanced team cohesion"
